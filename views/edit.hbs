@@ -10,7 +10,7 @@
           <div class="col-md-12 row mb-3 ml-1 mr-4">
             <label for="name" class="col-md-4 col-form-label">Name<span class="field-required">*</span> </label>
             <input type="text" name="name" class="form-control col-md-8" id="name" value="{{ record.name }}" required
-              maxlength="15">
+              maxlength="50">
           </div>
           {{!-- Date --}}
           <div class="col-md-12 row mb-3 ml-1 mr-4">
@@ -42,7 +42,7 @@
           <div class="col-md-12 row mb-3 ml-1 mr-4">
             <label for="amount" class="col-md-4 col-form-label">Amount<span class="field-required">*</span></label>
             <input type="number" name="amount" class="form-control col-md-8" id="amount" value="{{ record.amount }}"
-              required min="1" max="999999">
+              required min="1" max="999999999">
           </div>
           {{!-- type --}}
           <input type="text" name="type" class="form-control col-md-8" value="{{type}}" style="display: none;">
